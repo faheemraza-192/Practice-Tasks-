@@ -6,6 +6,8 @@ import Form from "./Components/Form";
 import Stopwatch from "./Components/Stopwatch";
 import Task from "./Components/Task";
 import Theme from "./Components/Theme";
+import Showtext from "./Components/Showtext";
+
 export default function Home() {
   return (
     <div>
@@ -22,6 +24,9 @@ export default function Home() {
       <Task/>
       <hr />
       <Theme/>
+      <hr />
+      <Showtext/>
+      <hr />
     </div>
   );
 }

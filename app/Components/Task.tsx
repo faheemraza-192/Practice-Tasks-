@@ -11,12 +11,15 @@ export default function Task() {
   const addTask = () => {
     if (task.trim() === "") return;                // prevent empty tasks
     setTasks([...tasks, task]);                    // add to array
+    alert("Add task successfully!")
     setTask("");                                   // clear input field
   };
 
   // ❌ Delete a task
   const deleteTask = (index: number) => {
     setTasks(tasks.filter((_, i) => i !== index)); // remove task by index
+    alert("deleted succesfully!")
+    
   };
 
 
