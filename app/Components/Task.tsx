@@ -19,13 +19,7 @@ export default function Task() {
     setTasks(tasks.filter((_, i) => i !== index)); // remove task by index
   };
 
-// other method to detete   ( Splice Method )
-// const deleteTask = (index: number) => {
-//     const newTasks = [...tasks]; // copy array
-//     newTasks.splice(index, 1);   // remove 1 item at index
-//     setTasks(newTasks);          // update state
-//   };
-  
+
 
   return (
     <div
