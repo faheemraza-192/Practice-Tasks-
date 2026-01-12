@@ -5,6 +5,7 @@ import Input from "./Components/Input";
 import Form from "./Components/Form";
 import Stopwatch from "./Components/Stopwatch";
 import Task from "./Components/Task";
+import Theme from "./Components/Theme";
 export default function Home() {
   return (
     <div>
@@ -19,6 +20,8 @@ export default function Home() {
       <Stopwatch/>
       <hr />
       <Task/>
+      <hr />
+      <Theme/>
     </div>
   );
 }
