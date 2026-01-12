@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Input from "./Components/Input";
 import Form from "./Components/Form";
 import Stopwatch from "./Components/Stopwatch";
+import Task from "./Components/Task";
 export default function Home() {
   return (
     <div>
@@ -16,6 +17,8 @@ export default function Home() {
       <Form/>
       <hr />
       <Stopwatch/>
+      <hr />
+      <Task/>
     </div>
   );
 }

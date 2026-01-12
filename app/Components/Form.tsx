@@ -44,19 +44,17 @@ function Form() {
   const [reset, setReset]=useState("");
 
   // when already  empty username oand password thn print msg alredady reset
-  const resetall = () => {
-    if (username === "" && password === "") {
-      setReset("already reset");
-      return;
+  const resetall=()=>{  
+    if(username==="" && password===""){
+setReset("alreadty reset");
     }
-  
-    setUsername("");
+    else if(username!=="" || password!==""){
+    // const e = setUsername(e.target.value);
+    // onchange{(e)=>setPassword(e.target.value)}
     setPassword("");
-    setReset("reset done");
-    setIsValid(false);
-    setMessage("");
-    setValidmessage("");
-  };
+setReset("reset done");
+    }
+}
   return (
     <div>
       <div className="mt-3 mb-3 ml-2">
@@ -64,12 +62,12 @@ function Form() {
         <input
           onChange={(e) => setUsername(e.target.value)}
           type="text"
-          placeholder="username" value={username}
+          placeholder="username"
         />
         <input
           onChange={(e) => setPassword(e.target.value)}
           type="text"
-          placeholder="password" value={password}
+          placeholder="password"
         />
         <p style={{ color: isValid ? "green" : "red" }}>{message}</p>
         <p>{validmessage}</p>
