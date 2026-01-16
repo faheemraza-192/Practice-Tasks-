@@ -13,7 +13,7 @@ initialValues:{
     confirmpassword:""
 },
 onSubmit:(values, actions)=>{
-
+    // console.log(values);
 }
     })
   return (
