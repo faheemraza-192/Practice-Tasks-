@@ -9,10 +9,16 @@ import Theme from "./Components/Theme";
 import Showtext from "./Components/Showtext";
 import SimpleLogin from "./Components/SimpleLogin";
 import Login from "./Components/Login";
+import LoginpracticeForm from "./Components/LoginpracticeForm";
 
 export default function Home() {
   return (
     <div>
+      <hr />
+      <LoginpracticeForm />
+      <hr />
+      <hr />
+      <hr />
       <Header />
       <hr />
       <hr />
