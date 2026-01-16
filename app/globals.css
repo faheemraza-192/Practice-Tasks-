@@ -48,3 +48,101 @@ buttons{
   margin-top: 10px;
   
 }
+
+
+
+ /* L O G I N    F O R M   (using   F O R M I K)    STARTS*/
+ /* ///////////////////////////////////////////////////// */
+ /* ===== PAGE CENTERING ===== */
+.login-wrapper {
+  display: flex;                /* center horizontally */
+  justify-content: center;
+  align-items: center;          /* center vertically */
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* ===== LOGIN BOX ===== */
+.login-box {
+  width: 320px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+.login-title {
+  margin-bottom: 15px;
+}
+
+/* ===== FORM ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== INPUT FIELDS ===== */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+/* ===== ERROR TEXT ===== */
+.error-text {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* ===== SHOW/HIDE PASSWORD ===== */
+.toggle-password {
+  margin-top: 5px;
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.login-btn {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #69ffd1;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* ===== STATUS MESSAGE ===== */
+.status-text {
+  margin-top: 10px;
+  color: red;
+}
+
+/* ===== DATA CARD ===== */
+.data-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-buttons {
+  margin-top: 5px;
+}
+
+/* ===== DELETE BUTTON ===== */
+.delete-btn {
+  margin-left: 8px;
+  color: red;
+}
+
+ /* ///////////////////////////////////////////////////// */
+ /* L O G I N    F O R M   (using   F O R M I K)    ENDS*/

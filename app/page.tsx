@@ -7,26 +7,33 @@ import Stopwatch from "./Components/Stopwatch";
 import Task from "./Components/Task";
 import Theme from "./Components/Theme";
 import Showtext from "./Components/Showtext";
+import SimpleLogin from "./Components/SimpleLogin";
+import Login from "./Components/Login";
 
 export default function Home() {
   return (
     <div>
       <Header />
       <hr />
+      <hr />
+      <Login />
+      <hr />
+      <hr />
       <Input />
       <hr />
       <Counter />
       <hr />
-      <Form/>
+      <Form />
       <hr />
-      <Stopwatch/>
+      <Stopwatch />
       <hr />
-      <Task/>
+      <Task />
       <hr />
-      <Theme/>
+      <Theme />
       <hr />
-      <Showtext/>
+      <Showtext />
       <hr />
+      <SimpleLogin />
     </div>
   );
 }
