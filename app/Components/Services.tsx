@@ -11,7 +11,7 @@ interface FormData {
   id: number;
   name: string;
   email: string;
-  password: string; //ll
+  password: string; 
   registeredAt: string;
 }
 
