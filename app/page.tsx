@@ -10,10 +10,17 @@ import Showtext from "./Components/Showtext";
 import SimpleLogin from "./Components/SimpleLogin";
 import Login from "./Components/Login";
 import LoginpracticeForm from "./Components/LoginpracticeForm";
+import Services from "./Components/Services";
 
 export default function Home() {
   return (
     <div>
+      <hr />
+      <main>
+      <Services />
+      </main>
+      <hr />
+      <hr />
       <hr />
       <LoginpracticeForm />
       <hr />
