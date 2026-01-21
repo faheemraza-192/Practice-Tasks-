@@ -8,7 +8,7 @@ function LoginpracticeForm() {
     // =============  second step: (2)  => YuP Validation =============
     const validationSchema = Yup.object({
         name:Yup.string().min(2).max(12).required("Name is required!"),
-        email:Yup.string().required("Email is required!"),
+        email:Yup.string().email("ïnvalid email!").required("Email is required!"),
         password:Yup.string().min(6).max(11).required("Password must be atleast 6 characters!"),
         confirmpassword:Yup.string().required("confirm password is required!").oneOf([Yup.ref("password")],"password must match!"),
     });
@@ -22,8 +22,10 @@ function LoginpracticeForm() {
       password: "",
       confirmpassword: "",
     },
+    validationSchema:validationSchema,
     onSubmit: (values, actions) => {
       console.log(values);
+      actions.resetForm();
     },
   });
   return (
@@ -45,47 +47,51 @@ function LoginpracticeForm() {
               className="border p-2 m-2"
               value={formik.values.name}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
               type="text"
               name="name"
               placeholder="Your Name  here . . . "
             />
-            <p></p>
+            <p style={{color:"red"}}>{formik.touched.name && formik.errors.name}</p>
           </div>
           <div>
             <input
               className="border p-2 m-2"
               value={formik.values.email}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
               type="email"
               name="email"
               placeholder="Your Email here . . . "
             />
           </div>
-          <p></p>
+          <p style={{color:"red"}}>{formik.touched.email && formik.errors.email}</p>
           <div>
             <input
               className="border p-2 m-2"
               value={formik.values.password}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
               type="password"
               name="password"
               placeholder="Your Password here . . . "
             />
           </div>
-          <p></p>
+          <p className="" style={{color:"red"}}>{formik.touched.password && formik.errors.password}</p>
           <div>
             <input
               className="border p-2 m-2"
               value={formik.values.confirmpassword}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
               type="password"
               name="confirmpassword"
               placeholder="Confirm Your Password . . . "
             />
           </div>
-          <p></p>
+          <p style={{color:"red"}}>{formik.touched.confirmpassword && formik.errors.confirmpassword}</p>
           <div>
-            <button
+            <button type="submit"
               className=""
               style={{
                 backgroundColor: "blue",
