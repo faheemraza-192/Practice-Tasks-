@@ -1,4 +1,4 @@
-import Image from "next/image";
+// Importing all UI components used on the home page
 import Counter from "./Components/Counter";
 import Header from "./Components/Header";
 import Input from "./Components/Input";
@@ -11,26 +11,30 @@ import SimpleLogin from "./Components/SimpleLogin";
 import Login from "./Components/Login";
 import LoginpracticeForm from "./Components/LoginpracticeForm";
 import Services from "./Components/Services";
+import Redux from "./Components/Redux";
 
+// Main page component for Next.js
 export default function Home() {
   return (
     <div>
       <hr />
+
+      {/* Main Section */}
       <main>
-      <Services />
+        <h1>Home Page</h1>
+
+        {/* Redux Counter Component */}
+        <Redux />
       </main>
+
       <hr />
-      <hr />
+      <Services />
       <hr />
       <LoginpracticeForm />
       <hr />
-      <hr />
-      <hr />
       <Header />
       <hr />
-      <hr />
       <Login />
-      <hr />
       <hr />
       <Input />
       <hr />
